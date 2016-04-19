@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5742F19F1CBF7DCF008D95E7 /* UIViewController+YKNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742F19E1CBF7DCF008D95E7 /* UIViewController+YKNavigation.m */; };
 		5746D7B11C49185D009D565B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5746D7B01C49185D009D565B /* main.m */; };
 		5746D7B41C49185D009D565B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5746D7B31C49185D009D565B /* AppDelegate.m */; };
-		5746D7B71C49185D009D565B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5746D7B61C49185D009D565B /* ViewController.m */; };
-		5746D7BA1C49185D009D565B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5746D7B81C49185D009D565B /* Main.storyboard */; };
 		5746D7BC1C49185D009D565B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5746D7BB1C49185D009D565B /* Assets.xcassets */; };
 		5746D7BF1C49185D009D565B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5746D7BD1C49185D009D565B /* LaunchScreen.storyboard */; };
 		5746D7CA1C49185D009D565B /* NavigationControllerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5746D7C91C49185D009D565B /* NavigationControllerDemoTests.m */; };
 		5746D7D51C49185D009D565B /* NavigationControllerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5746D7D41C49185D009D565B /* NavigationControllerDemoUITests.m */; };
 		5746D7EB1C491CD8009D565B /* YKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5746D7EA1C491CD8009D565B /* YKNavigationController.m */; };
+		579BD4001CB5FFDD00FDB529 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579BD3FE1CB5FFDD00FDB529 /* RootViewController.m */; };
+		579BD4011CB5FFDD00FDB529 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 579BD3FF1CB5FFDD00FDB529 /* RootViewController.xib */; };
+		579BD4051CB6024900FDB529 /* NormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579BD4031CB6024900FDB529 /* NormalViewController.m */; };
+		579BD4061CB6024900FDB529 /* NormalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 579BD4041CB6024900FDB529 /* NormalViewController.xib */; };
+		579BD40A1CB605E800FDB529 /* NoTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579BD4081CB605E800FDB529 /* NoTitleViewController.m */; };
+		579BD40B1CB605E800FDB529 /* NoTitleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 579BD4091CB605E800FDB529 /* NoTitleViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,13 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5742F19D1CBF7DCF008D95E7 /* UIViewController+YKNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YKNavigation.h"; sourceTree = "<group>"; };
+		5742F19E1CBF7DCF008D95E7 /* UIViewController+YKNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YKNavigation.m"; sourceTree = "<group>"; };
 		5746D7AC1C49185D009D565B /* NavigationControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5746D7B01C49185D009D565B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5746D7B21C49185D009D565B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5746D7B31C49185D009D565B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5746D7B51C49185D009D565B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5746D7B61C49185D009D565B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		5746D7B91C49185D009D565B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5746D7BB1C49185D009D565B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5746D7BE1C49185D009D565B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5746D7C01C49185D009D565B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +58,15 @@
 		5746D7D61C49185D009D565B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5746D7E91C491CD8009D565B /* YKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKNavigationController.h; sourceTree = "<group>"; };
 		5746D7EA1C491CD8009D565B /* YKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKNavigationController.m; sourceTree = "<group>"; };
+		579BD3FD1CB5FFDD00FDB529 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		579BD3FE1CB5FFDD00FDB529 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		579BD3FF1CB5FFDD00FDB529 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		579BD4021CB6024900FDB529 /* NormalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalViewController.h; sourceTree = "<group>"; };
+		579BD4031CB6024900FDB529 /* NormalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalViewController.m; sourceTree = "<group>"; };
+		579BD4041CB6024900FDB529 /* NormalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NormalViewController.xib; sourceTree = "<group>"; };
+		579BD4071CB605E800FDB529 /* NoTitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoTitleViewController.h; sourceTree = "<group>"; };
+		579BD4081CB605E800FDB529 /* NoTitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoTitleViewController.m; sourceTree = "<group>"; };
+		579BD4091CB605E800FDB529 /* NoTitleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoTitleViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,9 +120,15 @@
 			children = (
 				5746D7B21C49185D009D565B /* AppDelegate.h */,
 				5746D7B31C49185D009D565B /* AppDelegate.m */,
-				5746D7B51C49185D009D565B /* ViewController.h */,
-				5746D7B61C49185D009D565B /* ViewController.m */,
-				5746D7B81C49185D009D565B /* Main.storyboard */,
+				579BD3FD1CB5FFDD00FDB529 /* RootViewController.h */,
+				579BD3FE1CB5FFDD00FDB529 /* RootViewController.m */,
+				579BD3FF1CB5FFDD00FDB529 /* RootViewController.xib */,
+				579BD4021CB6024900FDB529 /* NormalViewController.h */,
+				579BD4031CB6024900FDB529 /* NormalViewController.m */,
+				579BD4041CB6024900FDB529 /* NormalViewController.xib */,
+				579BD4071CB605E800FDB529 /* NoTitleViewController.h */,
+				579BD4081CB605E800FDB529 /* NoTitleViewController.m */,
+				579BD4091CB605E800FDB529 /* NoTitleViewController.xib */,
 				5746D7BB1C49185D009D565B /* Assets.xcassets */,
 				5746D7BD1C49185D009D565B /* LaunchScreen.storyboard */,
 				5746D7C01C49185D009D565B /* Info.plist */,
@@ -149,6 +168,8 @@
 			children = (
 				5746D7E91C491CD8009D565B /* YKNavigationController.h */,
 				5746D7EA1C491CD8009D565B /* YKNavigationController.m */,
+				5742F19D1CBF7DCF008D95E7 /* UIViewController+YKNavigation.h */,
+				5742F19E1CBF7DCF008D95E7 /* UIViewController+YKNavigation.m */,
 			);
 			path = NavigationController;
 			sourceTree = "<group>";
@@ -256,9 +277,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				579BD40B1CB605E800FDB529 /* NoTitleViewController.xib in Resources */,
 				5746D7BF1C49185D009D565B /* LaunchScreen.storyboard in Resources */,
+				579BD4061CB6024900FDB529 /* NormalViewController.xib in Resources */,
 				5746D7BC1C49185D009D565B /* Assets.xcassets in Resources */,
-				5746D7BA1C49185D009D565B /* Main.storyboard in Resources */,
+				579BD4011CB5FFDD00FDB529 /* RootViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,10 +306,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5746D7B71C49185D009D565B /* ViewController.m in Sources */,
+				5742F19F1CBF7DCF008D95E7 /* UIViewController+YKNavigation.m in Sources */,
+				579BD40A1CB605E800FDB529 /* NoTitleViewController.m in Sources */,
 				5746D7B41C49185D009D565B /* AppDelegate.m in Sources */,
 				5746D7B11C49185D009D565B /* main.m in Sources */,
 				5746D7EB1C491CD8009D565B /* YKNavigationController.m in Sources */,
+				579BD4001CB5FFDD00FDB529 /* RootViewController.m in Sources */,
+				579BD4051CB6024900FDB529 /* NormalViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,14 +348,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5746D7B81C49185D009D565B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5746D7B91C49185D009D565B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5746D7BD1C49185D009D565B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -427,7 +445,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NavigationControllerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ucaiyuan.NavigationControllerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.wanyakun.NavigationControllerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -438,7 +456,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NavigationControllerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ucaiyuan.NavigationControllerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.wanyakun.NavigationControllerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

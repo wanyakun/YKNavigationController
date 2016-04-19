@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  NoTitleViewController.h
 //  NavigationControllerDemo
 //
-//  Created by wanyakun on 16/1/15.
+//  Created by wanyakun on 16/4/7.
 //  Copyright © 2016年 wanyakun. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface NoTitleViewController : UIViewController
 
 @end
-

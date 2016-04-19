@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "YKNavigationController.h"
+#import "RootViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,26 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //设置导航条 返回按钮
+    [[UINavigationBar appearance] setBackIndicatorImage:[UIImage imageNamed:@"icon_back"]];
+    [[UINavigationBar appearance] setBackIndicatorTransitionMaskImage:[UIImage imageNamed:@"icon_back"]];
+    [[UINavigationBar appearance] setTintColor:[UIColor lightGrayColor]];
+    //设置状态栏文字颜色
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
+    
+    RootViewController *rootVC = [[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil];
+    
+    YKNavigationController *navVC = [[YKNavigationController alloc] initWithRootViewController:rootVC];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
+    //设置窗体背景颜色
+    self.window.backgroundColor = [UIColor whiteColor];
+    //设置根控制器
+    self.window.rootViewController = navVC;
+    //显示窗体
+    [self.window makeKeyAndVisible];
+
     return YES;
 }
 

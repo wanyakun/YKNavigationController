@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VfK-3z-1y3">
+                    <rect key="frame" x="8" y="111" width="359" height="30"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="llt-ad-iDH"/>
+                    </constraints>
+                    <state key="normal" title="正常页面">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pushNormalViewController:" destination="-1" eventType="touchUpInside" id="dOd-7g-LgN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkX-Sg-ENG">
+                    <rect key="frame" x="8" y="162" width="359" height="30"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="w0X-2K-GLh"/>
+                    </constraints>
+                    <state key="normal" title="隐藏Nav页面">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pushHidenNavViewController:" destination="-1" eventType="touchUpInside" id="UON-ks-fk4"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="hkX-Sg-ENG" firstAttribute="top" secondItem="VfK-3z-1y3" secondAttribute="bottom" constant="21" id="7JC-9O-sMm"/>
+                <constraint firstItem="hkX-Sg-ENG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="Uc2-3r-van"/>
+                <constraint firstAttribute="trailing" secondItem="VfK-3z-1y3" secondAttribute="trailing" constant="8" id="dBj-sD-Vxe"/>
+                <constraint firstAttribute="trailing" secondItem="hkX-Sg-ENG" secondAttribute="trailing" constant="8" id="lcL-0O-DB8"/>
+                <constraint firstItem="VfK-3z-1y3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="n6c-8W-DJV"/>
+                <constraint firstItem="VfK-3z-1y3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="111" id="pO4-2y-m9L"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="400.5" y="339.5"/>
+        </view>
+    </objects>
+</document>
