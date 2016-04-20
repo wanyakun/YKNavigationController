@@ -81,10 +81,9 @@
     CGContextRelease(context);
     CGColorSpaceRelease(colorSpace);
     
-    return [UIImage imageWithCGImage:imageMasked scale:scale orientation:UIImageOrientationUp];
-    
-    
-    return nil;
+    UIImage *image = [UIImage imageWithCGImage:imageMasked scale:scale orientation:UIImageOrientationUp];
+    CGImageRelease(imageMasked);
+    return image;
 }
 
 @end
@@ -198,9 +197,7 @@ static NSValue *yk_tabBarRectValue;
 #pragma mark - UINavigationControllerDelegate
 - (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
     BOOL isRootViewController = (viewController == navigationController.viewControllers.firstObject);
-    
-    
-    
+
     self.interactivePopGestureRecognizer.delegate = self;
     self.interactivePopGestureRecognizer.enabled = !isRootViewController;
     if (viewController.canNotUseInteractivePopGestureRecognizer) {
@@ -211,11 +208,14 @@ static NSValue *yk_tabBarRectValue;
 #pragma mark - UIGestureRecognizerDelegate
 //修复有水平方向滚动的ScrollView时边缘返回手势失效的问题
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
+    if ([gestureRecognizer isKindOfClass:[UIScreenEdgePanGestureRecognizer class]]) {
+        return NO;
+    }
     return YES;
 }
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRequireFailureOfGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
-    return [gestureRecognizer isKindOfClass:UIScreenEdgePanGestureRecognizer.class];
+    return ![gestureRecognizer isKindOfClass:UIScreenEdgePanGestureRecognizer.class];
 }
 
 #pragma mark - getter

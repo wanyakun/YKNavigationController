@@ -20,9 +20,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    //设置导航条 返回按钮
-    [[UINavigationBar appearance] setBackIndicatorImage:[UIImage imageNamed:@"icon_back"]];
-    [[UINavigationBar appearance] setBackIndicatorTransitionMaskImage:[UIImage imageNamed:@"icon_back"]];
     [[UINavigationBar appearance] setTintColor:[UIColor lightGrayColor]];
     //设置状态栏文字颜色
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
