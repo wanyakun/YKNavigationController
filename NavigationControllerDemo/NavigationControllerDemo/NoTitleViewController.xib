@@ -67,10 +67,24 @@
                         <action selector="popViewController:" destination="-1" eventType="touchUpInside" id="Zbb-U4-pX8"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dz3-1l-mf2">
+                    <rect key="frame" x="8" y="335" width="359" height="30"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="j3g-ad-TUc"/>
+                    </constraints>
+                    <state key="normal" title="POPToViewController">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="popToViewController:" destination="-1" eventType="touchUpInside" id="biJ-nm-pgi"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="W5P-aG-ZjA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="5cU-Dj-Frg"/>
+                <constraint firstItem="Dz3-1l-mf2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="7tk-Jk-BN9"/>
                 <constraint firstAttribute="trailing" secondItem="W5P-aG-ZjA" secondAttribute="trailing" constant="8" id="86N-be-DIL"/>
                 <constraint firstItem="jXg-lv-4V2" firstAttribute="top" secondItem="W5P-aG-ZjA" secondAttribute="bottom" constant="29" id="CQY-J7-tsF"/>
                 <constraint firstItem="jXg-lv-4V2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="HWh-LH-dJP"/>
@@ -80,11 +94,13 @@
                 <constraint firstAttribute="trailing" secondItem="NLS-YC-30F" secondAttribute="trailing" constant="8" id="SJx-20-nHo"/>
                 <constraint firstItem="W35-jD-QPe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="cA7-96-IKc"/>
                 <constraint firstAttribute="trailing" secondItem="W35-jD-QPe" secondAttribute="trailing" constant="8" id="hdt-8E-gDR"/>
+                <constraint firstAttribute="trailing" secondItem="Dz3-1l-mf2" secondAttribute="trailing" constant="8" id="sJf-Bp-eYK"/>
                 <constraint firstItem="W35-jD-QPe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="81" id="sVU-IZ-vD5"/>
                 <constraint firstItem="NLS-YC-30F" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="yDR-iZ-hto"/>
+                <constraint firstItem="Dz3-1l-mf2" firstAttribute="top" secondItem="jXg-lv-4V2" secondAttribute="bottom" constant="30" id="z4e-kk-50I"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-            <point key="canvasLocation" x="90.5" y="349.5"/>
+            <point key="canvasLocation" x="-93.5" y="325.5"/>
         </view>
     </objects>
 </document>

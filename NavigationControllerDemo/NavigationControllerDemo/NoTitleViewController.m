@@ -75,6 +75,11 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+- (IBAction)popToViewController:(UIButton *)sender {
+    [self.navigationController popToViewController:self.yk_navigationController.yk_viewControllers[0] animated:YES];
+}
+
+
 
 
 #pragma mark - private method
