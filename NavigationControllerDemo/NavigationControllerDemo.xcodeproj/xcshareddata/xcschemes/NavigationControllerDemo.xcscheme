@@ -38,16 +38,6 @@
                ReferencedContainer = "container:NavigationControllerDemo.xcodeproj">
             </BuildableReference>
          </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5746D7CF1C49185D009D565B"
-               BuildableName = "NavigationControllerDemoUITests.xctest"
-               BlueprintName = "NavigationControllerDemoUITests"
-               ReferencedContainer = "container:NavigationControllerDemo.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
