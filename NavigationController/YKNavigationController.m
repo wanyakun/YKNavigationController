@@ -39,7 +39,10 @@
         backButtonImage = [self backButtonImage];
     }
     
-    viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:backButtonImage style:UIBarButtonItemStylePlain target:self action:@selector(didTapBackButton)];
+    UIBarButtonItem *navigationSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+    navigationSpace.width = -10;
+    UIBarButtonItem *leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:backButtonImage style:UIBarButtonItemStylePlain target:self action:@selector(didTapBackButton)];
+    viewController.navigationItem.leftBarButtonItems = @[navigationSpace, leftBarButtonItem];
     
     [self.navigationController pushViewController:[YKWrapViewController wrapViewControllerWithViewController:viewController] animated:animated];
 }
