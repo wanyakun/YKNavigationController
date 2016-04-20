@@ -1,4 +1,7 @@
+[![Build Status](https://travis-ci.org/wanyakun/YKNavigationController.svg?branch=master)](https://travis-ci.org/wanyakun/YKNavigationController)
+
 ## YKNavigationController是什么
+
 YKNavigationController是基于[JTNavigationController](https://github.com/JNTian/JTNavigationController)而封装的自定义NavigationController。
 
 > 使用`[self.navigationController setNavigationBarHidden:YES animated:NO];`方法来隐藏导航栏会导致滑动返回手势无效
