@@ -1,0 +1,3 @@
+language: objective-c
+xcode_project: NavigationControllerDemo/NavigationControllerDemo.xcodeproj
+xcode_scheme: NavigationControllerDemo
