@@ -99,10 +99,16 @@ static NSValue *yk_tabBarRectValue;
     wrapNavigationController.viewControllers = @[viewController];
     
     YKWrapViewController *wrapViewController = [[YKWrapViewController alloc] init];
-    [wrapViewController.view addSubview:wrapNavigationController.view];
+//    [wrapViewController.view addSubview:wrapNavigationController.view];
     [wrapViewController addChildViewController:wrapNavigationController];
     
     return wrapViewController;
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    YKWrapNavigationController *wrapNavigationController = self.childViewControllers.firstObject;
+    [self.view addSubview:wrapNavigationController.view];
 }
 
 - (void)viewDidLayoutSubviews {
@@ -117,7 +123,7 @@ static NSValue *yk_tabBarRectValue;
     [super viewWillAppear:animated];
     
     self.tabBarController.tabBar.translucent = YES;
-    if (self.tabBarController && !self.tabBarController.tabBar.hidden && yk_tabBarRectValue) {
+    if (self.tabBarController && !self.hidesBottomBarWhenPushed && yk_tabBarRectValue) {
         self.tabBarController.tabBar.frame = yk_tabBarRectValue.CGRectValue;
     }
 }
@@ -125,7 +131,7 @@ static NSValue *yk_tabBarRectValue;
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-    if (self.tabBarController && [self rootViewController].hidesBottomBarWhenPushed) {
+    if (self.tabBarController && self.hidesBottomBarWhenPushed) {
         self.tabBarController.tabBar.frame = CGRectZero;
     }
 }
