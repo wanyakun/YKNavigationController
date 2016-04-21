@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "YKNavigationController"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "基于JTNavigationController而封装的自定义NavigationController"
   s.description  = <<-DESC
                    相比于JTNavigationController，JTNavigationController做了一下修改：
@@ -71,7 +71,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/wanyakun/YKNavigationController.git", :tag => "1.0.1" }
+  s.source       = { :git => "https://github.com/wanyakun/YKNavigationController.git", :tag => "1.0.2" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
